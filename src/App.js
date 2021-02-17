@@ -4,6 +4,7 @@ import Cart from "./components/Cart";
 import Filter from "./components/Filter";
 import Products from "./components/Products";
 import data from "./data.json";
+import Bounce from 'react-reveal/Bounce';
 
 class App extends React.Component {
 
@@ -84,9 +85,9 @@ class App extends React.Component {
     return (
       <div className="grid-container">
         <header className="headerCss">
-          <a href="/">Shop for ME
+        <Bounce right><a href="/">Shop for ME
         <img src="images/logo.jpg" alt="logo"></img>
-          </a>
+          </a></Bounce>
         </header>
         <main>
           <div className="content">
